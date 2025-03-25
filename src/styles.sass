@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'include-media'
+
+$main-color: rgb(31, 11, 11)
+$secondary-color: #ab4040
+$tertiary-color: #e0bda6
+$text-color: #eed8d8
+$text-color2: #dbb9b9
+$text-font: 'montserrat', sans-serif
+$title-font: 'montserrat', sans-serif
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background: $text-color
+
+html, body
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 100%
+    scrollbar-width: thin
+    scrollbar-color: $text-color $main-color
+    scroll-behavior: smooth
+
+    &::-webkit-scrollbar
+        width: 10px
+        background: $main-color 
+
+    &::-webkit-scrollbar-thumb
+        background: $secondary-color
+
+    &::-webkit-scrollbar-track
+        background: $main-color
