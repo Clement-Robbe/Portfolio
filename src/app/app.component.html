@@ -15,67 +15,91 @@
     </div>
   </div>
 </main>
+<span id="aboutAnchor"></span>
+<div class="about" id="about" #about>
+  
+  <div class="photo">
+    <img class="aboutPhoto" src="/images/photo.jpg" alt="Photo de Clément Robbe">
+    <span class="aboutName">Clément Robbe</span>
+    <span class="aboutJob">Développeur Full Stack</span>
+    <ul class="aboutSocial">
+      <li class="socialIcon"><a href="https://www.linkedin.com/in/clement-robbe/"><i class="socialIcon  devicon-linkedin-plain"></i></a></li>
+      <li class="socialIcon"><a href="https://github.com/Clement-Robbe"><i class="socialIcon  devicon-github-plain"></i></a></li>
+      <li class="socialIcon"><a href="mailto:clement.robbe@gmail.com"><i class="socialIcon fa fa-envelope"></i></a></li>
+    </ul>
+    <button class="aboutButton" (click)="downloadCV()">Télécharger mon CV</button>
+  </div>
+  <div class="aboutContent">
+    <p>
+      Agé de 25 ans, je suis un développeur full stack passionné par la création de solutions innovantes et performantes.
+      Je mets à profit mes compétences en développement web et mobile pour concevoir des applications robustes et
+      intuitives.
+    </p>
+    <p>
+    Je suis actuellement en recherche d'une entreprise pour m'accueillir en alternance afin de valider mon diplôme de développeur web et de me professionnaliser.
+    </p>
+    <p>J'ai passé 2 ans à étudier l'informatique à l'IUT d'Aix-en-Provence où j'ai acquis des compétences en développement logiciel et web, en bases de données, sur les systèmes d'exploitation et en réseaux ainsi que des compétences en gestion de projet et en communication.</p>
+    <div class="skills">
+      <h2>Compétences</h2>
+      <ul class="skillLine">
+        <li>HTML <i class="devicon devicon-html5-plain"></i></li>
+        <li>CSS <i class="devicon devicon-css3-plain"></i></li>
+        <li>Bootstrap <i class="devicon devicon-bootstrap-plain"></i></li>
+        <li>PHP <i class="devicon devicon-php-plain"></i></li>
+        <li>MySQL <i class="devicon devicon-mysql-plain"></i></li>
+        <li>JavaScript <i class="devicon devicon-javascript-plain"></i></li>
+        <li>TypeScript <i class="devicon devicon-typescript-plain"></i></li>
+        <li>SASS <i class="devicon devicon-sass-plain"></i></li>
 
-  <div class="about" id="about">
-    <span id="aboutAnchor"></span>
-    <div class="photo">
-      <img class="aboutPhoto" src="/images/photo.jpg" alt="Photo de Clément Robbe">
-      <span class="aboutName">Clément Robbe</span>
-      <span class="aboutJob">Développeur Full Stack</span>
-      <ul class="aboutSocial">
-        <li class="socialIcon"><a href="https://www.linkedin.com/in/clement-robbe/"><i class="socialIcon  devicon-linkedin-plain"></i></a></li>
-        <li class="socialIcon"><a href="https://github.com/Clement-Robbe"><i class="socialIcon  devicon-github-plain"></i></a></li>
-        <li class="socialIcon"><a href="mailto:clement.robbe@gmail.com"><i class="socialIcon fa fa-envelope"></i></a></li>
+      </ul> 
+      <ul class="skillLine">
+        <li>Angular <i class="devicon devicon-angularjs-plain"></i></li>
+        <li>Node.js <i class="devicon devicon-nodejs-plain"></i></li>
+        <li>Wordpress <i class="devicon devicon-wordpress-plain"></i></li>
+        <li>Python <i class="devicon devicon-python-plain"></i></li>
+        <li>Java <i class="devicon devicon-java-plain"></i></li>
+        <li>C++ <i class="devicon devicon-cplusplus-plain"></i></li>
+        <li>Git <i class="devicon devicon-git-plain"></i></li>
+        <li>GitHub <i class="devicon devicon-github-plain"></i></li> 
       </ul>
-      <button class="aboutButton" (click)="downloadCV()">Télécharger mon CV</button>
-    </div>
-    <div class="aboutContent">
-      <p>
-        Agé de 25 ans, je suis un développeur full stack passionné par la création de solutions innovantes et performantes.
-        Je mets à profit mes compétences en développement web et mobile pour concevoir des applications robustes et
-        intuitives.
-      </p>
-      <p>
-      Je suis actuellement en recherche d'une entreprise pour m'accueillir en alternance afin de valider mon diplôme de développeur web et de me professionnaliser.
-      </p>
-      <p>J'ai passé 2 ans à étudier l'informatique à l'IUT d'Aix-en-Provence où j'ai acquis des compétences en développement logiciel et web, en bases de données, sur les systèmes d'exploitation et en réseaux ainsi que des compétences en gestion de projet et en communication.</p>
-      <div class="skills">
-        <h2>Compétences</h2>
-        <ul class="skillLine">
-          <li>HTML <i class="devicon devicon-html5-plain"></i></li>
-          <li>CSS <i class="devicon devicon-css3-plain"></i></li>
-          <li>Bootstrap <i class="devicon devicon-bootstrap-plain"></i></li>
-          <li>PHP <i class="devicon devicon-php-plain"></i></li>
-          <li>MySQL <i class="devicon devicon-mysql-plain"></i></li>
-          <li>JavaScript <i class="devicon devicon-javascript-plain"></i></li>
-          <li>TypeScript <i class="devicon devicon-typescript-plain"></i></li>
-          <li>SASS <i class="devicon devicon-sass-plain"></i></li>
-
-        </ul> 
-        <ul class="skillLine">
-          <li>Angular <i class="devicon devicon-angularjs-plain"></i></li>
-          <li>Node.js <i class="devicon devicon-nodejs-plain"></i></li>
-          <li>Wordpress <i class="devicon devicon-wordpress-plain"></i></li>
-          <li>Python <i class="devicon devicon-python-plain"></i></li>
-          <li>Java <i class="devicon devicon-java-plain"></i></li>
-          <li>C++ <i class="devicon devicon-cplusplus-plain"></i></li>
-          <li>Git <i class="devicon devicon-git-plain"></i></li>
-          <li>GitHub <i class="devicon devicon-github-plain"></i></li> 
-        </ul>
-      </div>
     </div>
   </div>
+</div>
 
-  <div class="projects" id="projects">
-    <span id="projectsAnchor"></span>
-    <h2>Mes projets</h2>
-    <div class="project">
-      <h3>Site web pour une architecte</h3>
-      <p>Il s'agit de la reconstruction d'un site web pour une architecte en raison de la rupture de son contrat avec son ancien prestataire qui lui faisait payer des frais de maintenance énormes. Le site est réalisé avec Wordpress son thème Divi. Il est tout récent, je travaille encore dessus.</p>
+<div class="projects" id="projects">
+  <span id="projectsAnchor"></span>
+  <h2>Mes projets</h2>
+  <div class="project">
+    <div class="projectImage">
+      <img src="/images/architecte-gonzalez.jpeg" alt="Site web pour une architecte" (click)="openModal('/images/architecte-gonzalez.jpeg', 'Site web pour une architecte')">
     </div>
-    <div class="project">
+    <div class="projectContent">
+      <h3>Site web pour une architecte</h3>
+      <p>Il s'agit de la reconstruction d'un site web pour une architecte en raison de la rupture de son contrat avec son ancien prestataire qui lui faisait payer des frais de maintenance énormes. Le site est réalisé avec Wordpress et son thème Divi. Il est tout récent, je travaille encore dessus.</p>
+      <p>les compétences mises en oeuvre sont :</p>
+      <ul>
+        <li>Administration de serveur</li>
+        <li>les langages : Html, CSS, JavaScript</li>
+        <li>les frameworks : Bootstrap, Wordpress, Divi</li>
+        <li>apprentissage des bonnes pratiques de SEO</li>
+      </ul>
+      <p>le site est accessible à l'adresse suivante : <a href="http://www.gonzalez-architecte.ovh">gonzalez-architecte.ovh</a> (site en cours de construction, il n'a pas encore de certificat SSL car je n'ai pas accès à l'administration ovh)</p>
+    </div>
+  </div>
+  <div class="project">
+    
+    <div class="projectContent">
       <h3>Site pour un tournoi de jeu vidéo</h3>
       <p>Il s'agit d'un site pour un tournoi de jeu vidéo en ligne. Il est réalisé avec PHP en architecture MVC avec Symfony. Il n'est biensûr plus maintenu depuis la fin du tournoi.</p>
+      <p>C'est ce projet qui m'a permis de mettre en pratique mes compétences en développement web et en gestion de projet pour la première fois.</p>
+      <p>les compétences mises en oeuvre sont :</p>
+      <ul>
+        <li>Gestion de projet</li>
+        <li>Gestion de base de données</li>
+        <li>Administration de serveur</li>
+        <li>les langages : Html, CSS, JavaScript, PHP, MySQL</li>
+        <li>les frameworks : Symfony, Bootstrap</li>
+      </ul>
       <p>Il a été réalisé à l'occasion de la 4ème édition du tournoi e-sport "Game_osu" en 2019 en partenariat avec Logitech et sous la tutelle d'un influenceur français connu.</p>
       <p>quelques chiffres du tournoi :</p>
       <ul> Diffusion française sur Twitch
@@ -87,18 +111,40 @@
         <li>2.500 vues simultanées</li>
       </ul>
     </div>
+    <div class="projectImage">
+      <img src="/images/mappool.png" alt="Site web pour un tournoi de jeu vidéo" (click)="openModal('/images/mappool.png', 'Site web pour un tournoi de jeu vidéo')">
+    </div>
   </div>
-
-  <div class="contact" id="contact">
-    <span id="contactAnchor"></span>
-    <h2>Me contacter</h2>
-    <ul class="social">
-      <li class="socialIcon"><a href="https://www.linkedin.com/in/clement-robbe/"><i class="socialIcon  devicon-linkedin-plain"></i></a></li>
-      <li class="socialIcon"><a href="https://github.com/Clement-Robbe"><i class="socialIcon  devicon-github-plain"></i></a></li>
-      <li class="socialIcon"><a href="mailto:clement.robbe@gmail.com"><i class="socialIcon fa fa-envelope"></i></a></li>
-      <li class="socialIcon"><a href="tel:+33695038849"><i class="socialIcon fa fa-phone"> +33 6 95 03 88 49</i></a></li>
-    </ul>
+  <div class="project">
+    <div class="projectContent">
+      <h3>Ce portfolio</h3>
+      <p>Il s'agit simplement d'un portfolio pour présenter mes compétences en développement web réalisé avec Angular.</p>
+      <p>les compétences mises en oeuvre sont :</p>
+      <ul>
+        <li>les langages : Html, SASS, TypeScript</li>
+        <li>le framework Angular</li>
+      </ul>
+    </div>
   </div>
+</div>
+<span id="contactAnchor"></span>
+<div class="contact" id="contact">
+  <h2>Me contacter</h2>
+  <ul class="social">
+    <li class="socialIcon"><a href="https://www.linkedin.com/in/clement-robbe/"><i class="socialIcon  devicon-linkedin-plain"></i></a></li>
+    <li class="socialIcon"><a href="https://github.com/Clement-Robbe"><i class="socialIcon  devicon-github-plain"></i></a></li>
+    <li class="socialIcon"><a href="mailto:clement.robbe@gmail.com"><i class="socialIcon fa fa-envelope"></i></a></li>
+    <li class="socialIcon"><a href="tel:+33695038849"><i class="socialIcon fa fa-phone"> </i>+33 6 95 03 88 49</a></li>
+  </ul>
+</div>
 
+<app-modal 
+  [isOpen]="modalOpen" 
+  [imageSrc]="modalImageSrc" 
+  [imageAlt]="modalImageAlt" 
+  (closeModal)="closeModal()">
+</app-modal>
 
 <router-outlet />
+
+

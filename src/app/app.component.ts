@@ -1,11 +1,12 @@
 import { Component, AfterViewInit, ElementRef, ViewChild, HostListener } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { ModalComponent } from './components/modal/modal.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule],
+  imports: [RouterOutlet, CommonModule, ModalComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'
 })
@@ -16,6 +17,9 @@ export class AppComponent implements AfterViewInit {
   title = 'portfolio';
   private lastScrollY = 0;
   private isMainVisible = true;
+  modalOpen = false;
+  modalImageSrc = '';
+  modalImageAlt = '';
 
   @HostListener('window:scroll')
   onScroll() {
@@ -75,12 +79,23 @@ export class AppComponent implements AfterViewInit {
     }
   }
 
+  openModal(imageSrc: string, imageAlt: string) {
+    this.modalImageSrc = imageSrc;
+    this.modalImageAlt = imageAlt;
+    this.modalOpen = true;
+  }
+
+  closeModal() {
+    this.modalOpen = false;
+  }
+
   downloadCV() {
     const link = document.createElement('a');
     link.href = '/downloads/CV_Clement_Robbe.pdf';
     link.download = 'CV_Clement_Robbe.pdf';
     link.click();
   }
+
   scrollTo(id: string) {
     const element = document.getElementById(id);
     if (element) {
