@@ -91,7 +91,7 @@ export class AppComponent implements AfterViewInit {
 
   downloadCV() {
     const link = document.createElement('a');
-    link.href = '/downloads/CV_Clement_Robbe.pdf';
+    link.href = 'downloads/CV_Clement_Robbe.pdf';
     link.download = 'CV_Clement_Robbe.pdf';
     link.click();
   }
